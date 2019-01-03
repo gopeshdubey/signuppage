@@ -1,0 +1,38 @@
+
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keyword" content="HTML, CSS, JAVASCRİPT">
+    <meta name="author" content="">
+	<title>Kayıt işlemi</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+<div class="container">
+  <div class="page-header text-center">
+    <h1>My profile</h1>
+    <a href="/logout" class="btn btn-danger btn-sm">Logout</a>
+  </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="well">
+          <h3><span class="fa fa-user"></span>Welcome <%= user.username  %></h3>
+
+
+          <p>
+            <strong>id</strong> <%= user.id %> <br>
+            <strong>username</strong> <%= user.username%> <br>
+          </p>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
